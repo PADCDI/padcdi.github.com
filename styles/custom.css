@@ -1,1 +1,330 @@
-/*TODO*/
+/* Global - Classes
+------------------------------*/
+html,
+body {
+    color: #232323;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+/* Bootstrap
+------------------------------*/
+.btn {
+    border-radius: 0;
+}
+
+.btn-primary {
+    border-color: #FF7F3F;
+    background-color: #FF7F3F;
+    color: #FFFFFF !important;
+}
+
+.btn-secondary {
+    border-color: #31517A;
+    background-color: #31517A;
+    color: #FFFFFF !important;
+}
+
+.btn-outline {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF !important;
+}
+
+.text-danger {
+    color: #F73A48;
+}
+
+.text-warning {
+    color: #FFC300;
+}
+
+.text-info {
+    color: #00C1ED;
+}
+
+.text-success {
+    color: #00D37E;
+}
+
+.text-currency {
+    color: #FFC300;
+}
+
+.text-discount {
+    color: #FF3643;
+}
+
+.text-token {
+    color: #00D37E;
+}
+
+/* Partial - Box
+------------------------------*/
+.box {
+    background-image: url(../images/box-bg.png);
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+/* Partial - Profile
+------------------------------*
+.profile {
+    height: 290px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+
+.profile .profile-info {
+    background-color: #31517A;
+    color: #FFFFFF;
+    height: 290px;
+    padding: 10px;
+    position: absolute;
+    top: 170px;
+    transition: 0.2s;
+    width: 100%;
+}
+
+.profile .profile-info.hover {
+    overflow: auto;
+    top: 0;
+}
+
+.profile .profile-info h3 {
+    font-size: 20px;
+}
+
+.profile .profile-info h4 {
+    color: #CCCCCC;
+    font-size: 17px;
+}
+
+.profile .profile-social {
+    display: block;
+    font-size: 35px;
+}
+
+.profile .profile-social a {
+    color: #FFFFFF;
+}*/
+.profile {
+}
+
+.profile .profile-image {
+    float: left;
+}
+
+.profile .profile-image img {
+    width: 100px;
+}
+
+.profile .profile-title {
+    padding-top: 20px;
+    padding-left: 120px;
+}
+
+.profile .profile-info h3 {
+    font-size: 20px;
+}
+
+.profile .profile-info h4 {
+    color: #666666;
+    font-size: 17px;
+}
+
+.profile .profile-social {
+    font-size: 20px;
+}
+
+.profile-bio {
+    clear: both;
+    color: #343434;
+    line-height: 24px;
+    padding-top: 20px;
+}
+
+/* Head
+------------------------------*/
+.head {
+    padding: 10px 20px;
+    border-bottom: 10px solid #222222;
+}
+
+.head .logo {
+    float: left;
+    height: 82px;
+}
+
+.head h2 {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 20px;
+    padding-left: 110px;
+    padding-top: 5px;
+}
+
+.head .nav-main {
+    padding-top: 25px;
+}
+
+.head .nav-main a {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.head.fixed-scroll {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #CCCCCC;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.head.fixed-scroll .btn-outline {
+    border: 1px solid #31517A;
+    color: #31517A !important;
+}
+
+/* Foot
+------------------------------*/
+.foot {
+    background-color: #343434;
+    color: #FFFFFF;
+    padding: 40px 0;
+}
+
+.foot .left {
+    text-align: center;
+}
+
+.foot .copywrite {
+    font-size: 12px;
+}
+
+.foot h6 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.foot a {
+    color: #FFFFFF;
+    display: block;
+    padding: 10px;
+}
+
+.foot .social a {
+    display: inline-block;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.foot .spacer {
+    display: block;
+    height: 21px;
+}
+
+/* Body
+------------------------------*/
+.body .page-home .section-pager .contailer {
+
+}
+
+.body .page-home .section-1 {
+    background-color: #222222;
+    background-image: url(../images/placeholder/banner-1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 260px;
+}
+
+.body .page-home .section-1 h1 {
+    color: #FFFFFF;
+    font-size: 33px;
+    text-align: center;
+    margin: auto;
+    max-width: 530px;
+    padding-top: 90px;
+    text-shadow: 4px 4px 10px #222222;
+}
+
+.body .page-home .section-2 {
+    border-bottom: 10px solid #222222;
+}
+
+.body .page-home .section-2 h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.body .page-home .section-2 img {
+    max-width: 160px;
+}
+
+.body .page-home .section-2 h3 {
+    color: #454545;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.body .page-home .section-2 .row {
+    text-align: center;
+}
+
+.body .page-home .section-3 {
+    background-color: #EFEFEF;
+    background-image: url(../images/background-4.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 400px auto;
+    border-bottom: 10px solid #222222;
+    padding: 20px;
+}
+
+.body .page-home .section-3 img {
+    float: left;
+    margin-left: 40px;
+    width: 165px;
+}
+
+.body .page-home .section-3 .right {
+    padding-left: 225px;
+}
+
+.body .page-home .section-3 h2 {
+    font-size: 19px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.body .page-home .section-3 h3 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.body .page-home .section-4 {
+
+}
+
+@media(max-width: 550px) {
+    .body .page-home .section-3 {
+        text-align: center;
+    }
+
+    .body .page-home .section-3 img {
+        float: none;
+        margin-left: 0;
+    }
+
+
+    .body .page-home .section-3 .right {
+        padding-left: 0;
+    }
+}
