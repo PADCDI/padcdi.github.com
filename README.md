@@ -1,6 +1,4 @@
-## Welcome to GitHub Pages
-
-You can use the [editor on GitHub](https://github.com/PADCDI/padcdi.github.com/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Welcome to PADCI Main Website
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
@@ -28,9 +26,31 @@ Syntax highlighted code block
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### Posts
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PADCDI/padcdi.github.com/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+To create a new post, all you need to do is create a file in the `_posts`
+directory. How you name files in this folder is important. Jekyll requires blog
+post files to be named according to the following format:
+
+```
+YEAR-MONTH-DAY-title.MARKUP
+```
+
+Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit
+numbers, and `MARKUP` is the file extension representing the format used in the
+file. For example, the following are examples of valid post filenames:
+
+```
+2011-12-31-new-years-eve-is-awesome.md
+2012-09-12-how-to-write-a-blog.md
+```
+
+### Content Formats
+
+All blog post files must begin with [YAML Front Matter](https://jekyllrb.com/docs/frontmatter/). After
+that, it's simply a matter of deciding which format you prefer.
+
+Read more here: https://jekyllrb.com/docs/posts/
 
 ### Support or Contact
 
