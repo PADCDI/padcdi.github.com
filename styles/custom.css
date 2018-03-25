@@ -196,26 +196,47 @@ body {
 .foot {
     background-color: #343434;
     color: #FFFFFF;
-    padding: 40px 0;
+    padding: 20px 0;
+}
+
+.foot a {
+    color: #FFFFFF;
 }
 
 .foot .left {
-    text-align: center;
+    text-align: left;
 }
 
-.foot .copywrite {
-    font-size: 12px;
+.foot .left .logo {
+    float: left;
+    height: 82px;
+}
+
+.foot .left h2 {
+    font-size: 15px;
+    font-weight: 200;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding-left: 110px;
+}
+
+.foot .left .social {
+    padding-left: 110px;
+}
+
+.foot .right {
+    padding-top: 20px;
+    text-align: right;
+}
+
+.foot .right a {
+    display: inline-block;
+    margin: 0 0 20px 20px;
 }
 
 .foot h6 {
     font-size: 18px;
     font-weight: bold;
-}
-
-.foot a {
-    color: #FFFFFF;
-    display: block;
-    padding: 10px;
 }
 
 .foot .social a {
@@ -227,6 +248,18 @@ body {
 .foot .spacer {
     display: block;
     height: 21px;
+}
+
+.foot .masthead {
+    border-top: 1px solid #898989;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+@media(max-width: 575px) {
+    .foot .right {
+        text-align: center;
+    }
 }
 
 /* Body
