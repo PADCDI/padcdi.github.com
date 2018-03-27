@@ -419,24 +419,32 @@ article.post h1 {
 ------------------------------*/
 .page-about {
     line-height: 24px;
+    font-weight: 300;
 }
 
-.page-about > .row {
+.page-about .container {
+    padding: 40px 0;
+}
+
+.page-about .container > .row {
     border-bottom: 1px solid #CCCCCC;
-    padding: 20px;
+    padding: 20px 0 0;
 }
 
 .page-about h2 {
     font-size: 19px;
+    font-weight: 200;
     text-align: right;
 }
 
 .page-about h4 {
+    font-size: 14px;
+    font-weight: 200;
     color: #999999;
 }
 
 .page-about .profile {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .page-about .profile img {
@@ -452,6 +460,22 @@ article.post h1 {
 
 /* Page - Membership
 ------------------------------*/
+.page-membership .container {
+    font-weight: 300;
+    line-height: 24px;
+    padding: 40px 0;
+}
+
+.page-membership h2 {
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.page-membership h3 {
+    font-weight: 200;
+    margin-top: 40px;
+}
+
 .page-membership .members a {
     display: inline-block;
     margin: 5px;
