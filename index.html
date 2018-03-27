@@ -80,10 +80,75 @@ description: Philippine Association for Digital Commerce and Decentralized Indus
         </div>
     </section>
     <section class="section-pager section-4">
-        <div class="float-right">
-
-        </div>
-        <div class="row">
+        <div class="container">
+            <span class="float-right">
+                <a
+                    class="more"
+                    href="/news.html"
+                    title="See more news from PADCDI"
+                >
+                    See More
+                </a>
+            </span>
+            <h2>Latest News</h2>
+            <div class="news row">
+                <div class="col-md-6">
+                    <div class="item clearfix">
+                        <a class="post-image" href="{{ site.posts[0].url }}">
+                            <img src="{{ site.posts[0].image }}" width="150" />
+                        </a>
+                        <div class="post-info">
+                            <h3>
+                                <a href="{{ site.posts[0].url }}">
+                                    {{ site.posts[0].title }}
+                                </a>
+                            </h3>
+                            <p>{{ site.posts[0].description }}</p>
+                        </div>
+                    </div>
+                    <div class="item clearfix">
+                        <a class="post-image" href="{{ site.posts[1].url }}">
+                            <img src="{{ site.posts[1].image }}" width="150" />
+                        </a>
+                        <div class="post-info">
+                            <h3>
+                                <a href="{{ site.posts[1].url }}">
+                                    {{ site.posts[1].title }}
+                                </a>
+                            </h3>
+                            <p>{{ site.posts[1].description }}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="item clearfix">
+                        <a class="post-image" href="{{ site.posts[2].url }}">
+                            <img src="{{ site.posts[2].image }}" width="150" />
+                        </a>
+                        <div class="post-info">
+                            <h3>
+                                <a href="{{ site.posts[2].url }}">
+                                    {{ site.posts[2].title }}
+                                </a>
+                            </h3>
+                            <p>{{ site.posts[2].description }}</p>
+                        </div>
+                    </div>
+                    <div class="item clearfix">
+                        <a class="post-image" href="{{ site.posts[3].url }}">
+                            <img src="{{ site.posts[3].image }}" width="150" />
+                        </a>
+                        <div class="post-info">
+                            <h3>
+                                <a href="{{ site.posts[3].url }}">
+                                    {{ site.posts[3].title }}
+                                </a>
+                            </h3>
+                            <p>{{ site.posts[3].description }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </section>
