@@ -169,6 +169,10 @@ ul {
 	text-align: center;
 	transition: 0.5s;
 	border: none;
+<<<<<<< HEAD
+=======
+	box-shadow: 2px 2px 10px grey;
+>>>>>>> newDesignThomas
 }
 
 .site-btn.btn-2 {
@@ -346,6 +350,13 @@ ul {
 	vertical-align: middle;
 }
 
+<<<<<<< HEAD
+=======
+.hero-center h1 {
+	margin-bottom: 30px;
+}
+
+>>>>>>> newDesignThomas
 .hero-content p {
 	font-size: 24px;
 	color: #0b1033;
@@ -532,7 +543,11 @@ ul {
   Testimonial section
 --------------------------*/
 .testimonial-section {
+<<<<<<< HEAD
 	padding-top: 320px;
+=======
+	/*padding-top: 320px;*/
+>>>>>>> newDesignThomas
 	background: #1488CC;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -672,6 +687,17 @@ ul {
 	margin-right: 30px;
 }
 
+<<<<<<< HEAD
+=======
+.seal {
+	width: 130px;
+}
+
+.seal-white {
+	width: 100px;
+}
+
+>>>>>>> newDesignThomas
 .service .service-text h2,
 .service .icon-box-text h2,
 .icon-box .service-text h2,
@@ -745,9 +771,15 @@ ul {
 	Promotion section
 --------------------------*/
 .promotion-section {
+<<<<<<< HEAD
 	background: #00c6ff;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+=======
+background: #1488CC;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+>>>>>>> newDesignThomas
 	padding: 115px 0;
 }
 
@@ -785,7 +817,11 @@ ul {
 	height: 100%;
 	right: -15px;
 	top: 0;
+<<<<<<< HEAD
 	background: #6a23b5;
+=======
+	background: #fff;
+>>>>>>> newDesignThomas
 	z-index: -1;
 }
 
@@ -846,12 +882,20 @@ ul {
 }
 
 .contact-info p {
+<<<<<<< HEAD
 	color: #fff;
+=======
+	color: #6c6e7e;
+>>>>>>> newDesignThomas
 }
 
 .contact-info h3 {
 	font-weight: 400;
+<<<<<<< HEAD
 	color: #2be6ab;
+=======
+	color: #333;
+>>>>>>> newDesignThomas
 	margin-bottom: 20px;
 }
 
@@ -864,12 +908,20 @@ ul {
 	Footer section
 --------------------------*/
 .footer-section {
+<<<<<<< HEAD
 	background: #220c3b;
+=======
+	background: #fff;
+>>>>>>> newDesignThomas
 	text-align: center;
 }
 
 .footer-section h2 {
+<<<<<<< HEAD
 	color: #6a23b5;
+=======
+	color: #333;
+>>>>>>> newDesignThomas
 	font-size: 14px;
 	padding: 18px 0;
 }
