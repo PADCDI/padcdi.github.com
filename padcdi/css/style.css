@@ -1637,6 +1637,7 @@ ul {
 		display: block;
 		padding: 10px;
 		margin-right: 0;
+		background-color: rgba(255,255,255,0.9);
 	}
 	.header-section .menu-list li a:after {
 		left: 0%;
