@@ -34,6 +34,10 @@ body {
     color: #FFFFFF !important;
 }
 
+.form-control {
+    border-radius: 0 !important;
+}
+
 .text-danger {
     color: #F73A48;
 }
@@ -484,4 +488,18 @@ article.post h1 {
 .page-membership .members img {
     border: 1px solid #CCCCCC;
     padding: 5px;
+}
+
+/* Page - Contact Us
+------------------------------*/
+.page-contact {
+    font-weight: 300;
+}
+
+.page-contact .container {
+    max-width: 800px;
+}
+
+.page-contact .container p {
+    margin-top: 20px;
 }
