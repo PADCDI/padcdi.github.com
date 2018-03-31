@@ -1806,6 +1806,14 @@ ul {
 	.single-post .author .avatar img {
 		min-width: 60px;
 	}
+	.cocimg {
+		margin-top: 30px;
+		margin-bottom: 0;
+		width: 70%;
+	}
+	.mute {
+		margin-top: 40px;
+	}
 	.promotion-section p {
 		margin-top: 20px;
 		margin-bottom: 20px; 
