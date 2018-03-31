@@ -1684,7 +1684,7 @@ ul {
 		margin-bottom: 80px;
 	}
 	.testimonial-section {
-		padding-top: 160px;
+		padding-top: 60px;
 	}
 	.member {
 		margin-bottom: 60px;
@@ -1745,8 +1745,18 @@ ul {
 	.header-section {
 		padding: 0 20px;
 	}
+	.hero-center h1 {
+		font-size: 20px;
+		margin: 35px;
+	}
 	.hero-content {
-		display: none;
+		/*display: none;*/
+		text-align: center;
+		margin-left: 0;
+		width: 100%;
+	}
+	#particles-js {
+		height: 100vh;
 	}
 	.intro-video {
 		margin-top: -30px;
@@ -1764,6 +1774,10 @@ ul {
 	}
 	.single-post .author .avatar img {
 		min-width: 60px;
+	}
+	.promotion-section p {
+		margin-top: 20px;
+		margin-bottom: 20px; 
 	}
 	.buttons button {
 		margin-bottom: 20px;
