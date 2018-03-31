@@ -350,6 +350,10 @@ ul {
 	margin-top: 35px;
 }
 
+.big-logo {
+	width: 70%;
+}
+
 .owl-carousel .owl-nav {
 	position: absolute;
 	top: 50%;
