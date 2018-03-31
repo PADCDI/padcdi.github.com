@@ -298,7 +298,7 @@ ul {
 
 .header-section .menu-list li a:hover,
 .header-section .menu-list li a.active {
-	color: #6a23b5;
+	color: #0575E6;
 }
 
 .header-section .menu-list li:last-child a {
@@ -408,7 +408,7 @@ ul {
 --------------------------*/
 .about-section,
 .team-section {
-	background: #FDFDFE;
+	background: #FFF;
 	/*background: #FF4E50;
 	background: -webkit-linear-gradient(to right, #F9D423, #FF4E50);  
 	background: linear-gradient(to right, #F9D423, #FF4E50); 
@@ -757,7 +757,7 @@ ul {
 	background: #1488CC;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #2B32B2, #1488CC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	padding: 115px 0;
+	padding: 100px 0;
 }
 
 .promotion-section h2 {
@@ -1401,8 +1401,30 @@ ul {
 }
 
 /*===  Accordions Element ===*/
+.member-section {
+	color: #333;
+	background: #fff;
+}
+
+.member-info {
+	font-size: 18px;
+	text-align: justify;
+}
+
+.member-details {
+	text-align: left;
+	font-size: 15px;
+	margin-bottom: 10px;
+	padding: 10px;
+	color: #6c6e7e;
+}
+
+.member-details li {
+	margin-bottom: 4px;
+}
+
 .site-accordions {
-	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .site-accordions .panel {
@@ -1491,15 +1513,20 @@ ul {
 }
 
 /*===  Facts Element ===*/
+.center {
+	text-align: center;
+}
+
 .facts .fact {
 	display: -webkit-inline-box;
 	display: -ms-inline-flexbox;
 	display: inline-flex;
+	text-align: center;
 }
 
 .facts .fact .icon {
 	margin-right: 20px;
-	color: #6a23b5;
+	color: #fff;
 	font-size: 45px;
 	padding-top: 10px;
 }
@@ -1507,14 +1534,17 @@ ul {
 .facts .fact .fact-text h2 {
 	font-family: "Roboto", sans-serif;
 	font-size: 72px;
-	color: #2be6ab;
+	color: #F9D423;
 	font-weight: 600;
 	margin-bottom: 5px;
+	text-align: center;
 }
 
 .facts .fact .fact-text h3 {
 	font-size: 16px;
 	font-weight: 500;
+	color: #fff;
+	text-align: center;
 }
 
 
