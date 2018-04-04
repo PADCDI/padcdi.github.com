@@ -24,27 +24,51 @@
     <meta name="msapplication-config" content="/images/icons/browserconfig.xml" />
     <meta name="theme-color" content="#FFFFFF" />
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,700|Roboto:300,400,700" rel="stylesheet" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" type="text/css" href="/styles/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/flaticon.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="/styles/style.css" />
     <link href="{{ '/styles/custom.css?v=' | append: site.github.build_revision | relative_url }}" rel="stylesheet" type="text/css" />
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
     {% seo %}
 
-    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
-
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/jquery-2.1.4.min.js"></script>
 </head>
 
 <body>
-    <header class="head" data-do="fixed-scroll">{% include header.html %}</header>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader">
+            <img src="/images/logo.png" alt="" />
+            <h2>Loading.....</h2>
+        </div>
+    </div>
 
-    <main class="body page">{{ content }}</main>
+    <header class="header-section">{% include header.html %}</header>
+
+    {{ content }}
 
     <footer class="foot">{% include footer.html %}</footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/doon@1.0.0/doon.min.js" type="text/javascript"></script>
-    <script src="/scripts/custom.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/scripts/magnific-popup.min.js"></script>
+    <script type="text/javascript" src="/scripts/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script type="text/javascript" src="/scripts/particles.js"></script>
+    <script type="text/javascript" src="/scripts/circle-progress.min.js"></script>
+    <script type="text/javascript" src="/scripts/main.js"></script>
+
+    <script src="{{ '/scripts/custom.js?v=' | append: site.github.build_revision | relative_url }}" type="text/javascript"></script>
 </body>
 </html>
