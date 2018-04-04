@@ -37,6 +37,14 @@
     left: 50px;
 }
 
+.news > a {
+    background-color: #FFFFFF;
+    display: block;
+    height: 150px;
+    line-height: 150px;
+    overflow: hidden;
+}
+
 .news span {
     display: block;
     font-family: "Roboto", sans-serif;
