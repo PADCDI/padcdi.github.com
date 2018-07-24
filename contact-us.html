@@ -1,78 +1,90 @@
 ---
+html_class: page-contact
 layout: default
 title: Contact PADCDI
 description: TODO add SEO here
 ---
-<section class="page-contact">
-    <header class="section-head">
-        <h1>Contact PADCDI</h1>
-    </header>
-    <div class="container">
-        <p>
-            Ut ut pharetra quam. Sed consectetur mi vitae odio interdum,
-            non luctus tellus congue. Maecenas aliquet lectus non nisi
-            varius scelerisque. Mauris sit amet sem a sem accumsan
-            hendrerit. Vivamus ultricies ante quis mi fermentum, id
-            aliquet arcu dapibus. In euismod varius sapien in aliquam.
-            Sed porta pharetra ipsum. In convallis urna nec dapibus finibus.
-        </p>
-        <form
-            action="https://docs.google.com/forms/d/e/1FAIpQLSdNNT7R09IRsfvktlisiYbUWOQYPLRRjWDZSGKR0D1xXnGjzw/formResponse"
-            id="contact-form"
-            method="get"
-            target="gdocs-frame"
-        >
-            <div class="form-group">
-                <label for="entry.2077891887">Your Name</label>
-                <input
-                    autocomplete="name"
-                    class="form-control resetable"
-                    name="entry.2077891887"
-                    placeholder="Enter your Name"
-                    type="text"
-                />
+<!-- START: SECTION HERO -->
+<section class="section section-hero hero-half">
+    <div class="particles" id="particles" data-do="particles"></div>
+    <div class="container hero">
+        <div class="row">
+            <div class="col-lg-6 left">
+                <img class="big-logo" src="/assets/images/big-logo.png" alt="PADCDI Logo" />
             </div>
-            <div class="form-group">
-                <label for="entry.763804488">Your Email</label>
-                <input
-                    autocomplete="email"
-                    class="form-control resetable"
-                    name="entry.763804488"
-                    placeholder="Enter your Email"
-                    type="email"
-                />
+            <div class="col-lg-6 right">
+                <h1>Contact Us</h1>
             </div>
-            <div class="form-group">
-                <label for="entry.1619716355">Subject</label>
-                <select
-                    class="form-control resetable"
-                    name="entry.1619716355"
-                >
-                    <option value="membership">I'm interested in membership</option>
-                    <option value="badge">I'm interested in getting the badge</option>
-                    <option value="inquiry">I have a general inquiry</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="entry.1800779259">Message</label>
-                <textarea
-                    class="form-control resetable"
-                    name="entry.1800779259"
-                    placeholder="Enter your message"
-                ></textarea>
-            </div>
-            <div class="form-group">
-                <input type="hidden" name="fvv" value="1" />
-                <input type="hidden" name="pageHistory" value="0" />
-                <input type="hidden" name="fbzx" value="6580539988320685329" />
-                <input type="hidden" name="draftResponse" value='[null,null,"6580539988320685329"]' />
-                <button type="submit" class="btn btn-primary">Submit</button>
-                <span class="help-text"></span>
-            </div>
-        </form>
-        <iframe id="gdocs-frame" name="gdocs-frame" style="display:none;"></iframe>
+        </div>
     </div>
 </section>
+<!-- END: SECTION HERO -->
+
+<div class="container">
+    <p>
+        Ut ut pharetra quam. Sed consectetur mi vitae odio interdum,
+        non luctus tellus congue. Maecenas aliquet lectus non nisi
+        varius scelerisque. Mauris sit amet sem a sem accumsan
+        hendrerit. Vivamus ultricies ante quis mi fermentum, id
+        aliquet arcu dapibus. In euismod varius sapien in aliquam.
+        Sed porta pharetra ipsum. In convallis urna nec dapibus finibus.
+    </p>
+    <form
+        action="https://docs.google.com/forms/d/e/1FAIpQLSdNNT7R09IRsfvktlisiYbUWOQYPLRRjWDZSGKR0D1xXnGjzw/formResponse"
+        id="contact-form"
+        method="get"
+        target="gdocs-frame"
+    >
+        <div class="form-group">
+            <label for="entry.2077891887">Your Name</label>
+            <input
+                autocomplete="name"
+                class="form-control resetable"
+                name="entry.2077891887"
+                placeholder="Enter your Name"
+                type="text"
+            />
+        </div>
+        <div class="form-group">
+            <label for="entry.763804488">Your Email</label>
+            <input
+                autocomplete="email"
+                class="form-control resetable"
+                name="entry.763804488"
+                placeholder="Enter your Email"
+                type="email"
+            />
+        </div>
+        <div class="form-group">
+            <label for="entry.1619716355">Subject</label>
+            <select
+                class="form-control resetable"
+                name="entry.1619716355"
+            >
+                <option value="membership">I'm interested in membership</option>
+                <option value="badge">I'm interested in getting the badge</option>
+                <option value="inquiry">I have a general inquiry</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="entry.1800779259">Message</label>
+            <textarea
+                class="form-control resetable"
+                name="entry.1800779259"
+                placeholder="Enter your message"
+            ></textarea>
+        </div>
+        <div class="form-group">
+            <input type="hidden" name="fvv" value="1" />
+            <input type="hidden" name="pageHistory" value="0" />
+            <input type="hidden" name="fbzx" value="6580539988320685329" />
+            <input type="hidden" name="draftResponse" value='[null,null,"6580539988320685329"]' />
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <span class="help-text"></span>
+        </div>
+    </form>
+    <iframe id="gdocs-frame" name="gdocs-frame" style="display:none;"></iframe>
+</div>
 <script type="text/javascript">
 jQuery(function($) {
     $('#contact-form').submit(function(e) {

@@ -1,47 +1,46 @@
 ---
+html_class: page-membership
 layout: default
 title: PADCDI Members and Membership
 description: TODO add SEO here
 ---
-<!-- Intro Section -->
-<div class="hero-section hero-half">
-    <div class="hero-content">
-        <div class="hero-center">
-            <div class="col-sm-12 col-md-offset-1 col-md-5">
-                <img class="big-logo" src="/images/big-logo.png" alt="PADCDI" />
+<!-- START: SECTION HERO -->
+<section class="section section-hero hero-half">
+    <div class="particles" id="particles" data-do="particles"></div>
+    <div class="container hero">
+        <div class="row">
+            <div class="col-lg-6 left">
+                <img class="big-logo" src="/assets/images/big-logo.png" alt="PADCDI Logo" />
             </div>
-            <div class="col-sm-12 col-md-5">
+            <div class="col-lg-6 right">
                 <h1>PADCDI Membership Information</h1>
-                <div class="promo-btn-area">
-                    <a href="#apply" class="site-btn btn-2">Apply Now</a>
-                </div>
+                <a class="btn btn-yellow btn-primary" href="/signup">Sign Up Now</a>
             </div>
         </div>
     </div>
-    <!-- background -->
-    <div class="item hero-item" id="particles-js" data-bg="img/01.jpg"></div>
-</div>
+</section>
+<!-- END: SECTION HERO -->
 
 <!-- About section -->
-<div class="about-section spad">
+<section class="section section-bullets spad">
     <!-- card section -->
-    <div class="card-section">
-        <div class="container">
-            <div class="row">
-                <!-- single card -->
-                <div class="col-md-6 col-sm-6">
-                    <div class="lab-card" style="padding:30px 50px;">
-                        <div class="icon" style="margin-bottom:10px;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon">
                             <i class="flaticon-013-puzzle"></i>
                         </div>
                         <h2>Industry Members</h2>
                         <p>Industry members are organizations that directly implement distributed ledger technologies within their products or services.</p>
                     </div>
                 </div>
-                <!-- single card -->
-                <div class="col-md-6 col-sm-6">
-                    <div class="lab-card" style="padding:30px 50px;">
-                        <div class="icon" style="margin-bottom:10px;">
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="icon">
                             <i class="flaticon-024-idea-2"></i>
                         </div>
                         <h2>Partner Members</h2>
@@ -51,173 +50,117 @@ description: TODO add SEO here
             </div>
         </div>
     </div>
-    <!-- card section end-->
+</section>
 
-    <!-- membership section -->
-    <div class="membership-section">
-        <div class="container">
-            <div class="section-title dark">
-                <h2>PADCDI <span>Member</span> Directory</h2>
+<!-- START: SECTION MEMBERS -->
+<section class="section section-members">
+    <div class="container">
+        <div class="section-title dark">
+            <h2>PADCDI <span>Member</span> Directory</h2>
+        </div>
+        <div class="row">
+            {% for item in site.members %}
+                {% if item.name %}
+                    <div class="col-md-2 col-sm-3">
+                        <a href="{{ item.site }}" title="{{ item.name }}" target="_blank">
+                            <img height="100" alt="{{ item.name }}" src="{{ item.logo }}" />
+                        </a>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- END: SECTION MEMBERS -->
+
+<!-- START: SECTION BENEFITS -->
+<section class="section section-benefits">
+    <div class="container">
+        <div class="section-title">
+            <h2>Our members enjoy these <span>benefits</span></h2>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 col-sm-12">
+                <div class="benefit-item">
+                    <div class="icon">
+                        <img class="seal" src="/assets/images/seal.png" alt="Approval" />
+                    </div>
+                    <div class="benefit-info">
+                        <h2>Association Approval</h2>
+                        <p>All members are afforded the opportunity to apply for approval by the Association in certifying validity and integrity.</p>
+                    </div>
+                </div>
             </div>
-            <div class="row">
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-1.png" />
-                    </a>
+            <div class="col-lg-4 col-sm-6 col-sm-12">
+                <div class="benefit-item">
+                    <div class="icon">
+                        <i class="flaticon-011-compass"></i>
+                    </div>
+                    <div class="benefit-info">
+                        <h2>Professional Networking</h2>
+                        <p>Connect with leaders across digital-related industries in and outside of the Philippines to achieve your goals.</p>
+                    </div>
                 </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-2.png" />
-                    </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-sm-12">
+                <div class="benefit-item">
+                    <div class="icon">
+                        <i class="flaticon-043-sketch"></i>
+                    </div>
+                    <div class="benefit-info">
+                        <h2>Promote Progress</h2>
+                        <p>Participate in PADCDI committees, conferences, workshops, and other initiatives to promote a more educated, advanced, and innovative ecosystem.</p>
+                    </div>
                 </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-3.png" />
-                    </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-sm-12">
+                <div class="benefit-item">
+                    <div class="icon">
+                        <i class="flaticon-018-laptop-1"></i>
+                    </div>
+                    <div class="benefit-info">
+                        <h2>Social Media</h2>
+                        <p>Member achievements and information are celebrated via our public social media outlets and newsletters.</p>
+                    </div>
                 </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-4.png" />
-                    </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-sm-12">
+                <div class="benefit-item">
+                    <div class="icon">
+                        <i class="flaticon-036-brainstorming"></i>
+                    </div>
+                    <div class="benefit-info">
+                        <h2>Education Programs</h2>
+                        <p>Teach regulators and future customers about modern technologies, skills, and ideas while promoting your brand.</p>
+                    </div>
                 </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-5.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-6.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-7.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-8.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-1.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-2.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-3.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-4.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-5.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-6.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-7.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-8.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-1.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-2.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-3.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-4.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-5.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-6.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-7.png" />
-                    </a>
-                </div>
-                <!-- single service -->
-                <div class="col-md-2 col-sm-3">
-                    <a href="#" target="_blank">
-                        <img height="100" src="/images/placeholders/logo-8.png" />
-                    </a>
+            </div>
+            <div class="col-lg-4 col-sm-6 col-sm-12">
+                <div class="benefit-item">
+                    <div class="icon">
+                        <i class="flaticon-026-search"></i>
+                    </div>
+                    <div class="benefit-info">
+                        <h2>Job Network</h2>
+                        <p>Connect with technical schools and communities to build your team that has the technical capital to push your organization forward.</p>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="text-center">
+            <a href="/membership" class="btn btn-yellow btn-primary">Learn More</a>
+        </div>
     </div>
-    <!-- services section end -->
-</div>
+</section>
+<!-- END: SECTION BENEFITS -->
 
-<!-- page section -->
-<div class="promotion-section">
+<!-- START: SECTION PROMOTIONS --
+<section class="section section-stats">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <div class="">
                     <div class="row facts">
-                        <!-- Single -->
                         <div class="col-md-3 col-sm-6 center">
                             <div class="fact">
                                 <div class="fact-text">
@@ -226,7 +169,6 @@ description: TODO add SEO here
                                 </div>
                             </div>
                         </div>
-                        <!-- Single -->
                         <div class="col-md-3 col-sm-6 center">
                             <div class="fact">
                                 <div class="fact-text">
@@ -235,7 +177,6 @@ description: TODO add SEO here
                                 </div>
                             </div>
                         </div>
-                        <!-- Single -->
                         <div class="col-md-3 col-sm-6 center">
                             <div class="fact">
                                 <div class="fact-text">
@@ -244,7 +185,6 @@ description: TODO add SEO here
                                 </div>
                             </div>
                         </div>
-                        <!-- Single -->
                         <div class="col-md-3 col-sm-6 center">
                             <div class="fact">
                                 <div class="fact-text">
@@ -258,27 +198,28 @@ description: TODO add SEO here
             </div>
         </div>
     </div>
-</div>
+</section>
+<!-- END: SECTION PROMOTIONS --
 
 
-<!-- features section -->
-<div class="team-section spad">
+<!-- features section --
+<section class="section section-code">
     <div class="overlay"></div>
     <div class="container">
         <div class="section-title">
             <h2>PADCDI <span>Member</span> Code of Conduct</h2>
         </div>
         <div class="row">
-            <div class="col-md-offset-1 col-md-5">
+            <div class="offset-md-1 col-md-5">
                 <h3 style="line-height:40px;text-align:justify;">PADCDI enforces a Code of Conduct on all members to ensure externally auditable best-practice standards of conduct for businesses operating in the Philippine digital commerce and distributed technologies industries.</h3>
             </div>
-            <div class="col-md-offset-1 col-md-5 col-sm-12">
-                <img class="img-responsive center-block cocimg" src="/images/seal.png" alt="Code of Conduct" />
+            <div class="offset-md-1 col-md-5 col-sm-12">
+                <img class="img-responsive center-block cocimg" src="/assets/images/seal.png" alt="Code of Conduct" />
             </div>
         </div>
-        <div class="text-center mt100 mute">
-            <a href="" class="site-btn">Review Code</a>
+        <div class="text-center">
+            <a class="btn btn-yellow btn-primary" href="/code-of-conduct">Review Code</a>
         </div>
     </div>
-</div>
+</section>
 <!-- features section end-->

@@ -1,40 +1,35 @@
 ---
+html_class: page-home
 layout: default
 title: PADCDI - Philippine Association for Digital Commerce and Decentralized Industries
 description: Philippine Association for Digital Commerce and Decentralized Industries
 ---
 
-<!-- Intro Section -->
-<div class="hero-section">
-    <div class="hero-content">
-        <div class="hero-center">
-            <div class="col-sm-12 col-md-offset-1 col-md-5">
-                <img class="big-logo" src="/images/big-logo.png" alt="PADCDI">
+<!-- START: SECTION HERO -->
+<section class="section section-hero">
+    <div class="particles" id="particles" data-do="particles"></div>
+    <div class="container hero">
+        <div class="row">
+            <div class="offset-lg-1 col-lg-5 left">
+                <img class="big-logo" src="/assets/images/big-logo.png" alt="PADCDI Logo" />
             </div>
-            <div class="col-sm-12 col-md-5">
-                <h1>PADCDI is the association of leaders bringing the Philippines to the forefront of global innovation and commerce.</h1>
-                <div class="promo-btn-area">
-                    <a href="#apply" class="site-btn btn-2">Apply Now</a>
-                </div>
+            <div class="col-lg-5 right">
+                <h1>PADCDI is the association of leaders promoting blockchain innovations in the Philippines.</h1>
+                <a class="btn btn-yellow btn-primary" href="#contact">Contact Us</a>
             </div>
         </div>
     </div>
-    <!-- background -->
-    <div class="item hero-item" id="particles-js" data-bg="/images/placeholder/01.jpg"></div>
-</div>
-<!-- Intro Section -->
+</section>
+<!-- END: SECTION HERO -->
 
-
-<!-- About section -->
-<div class="about-section spad">
-    <div class="overlay"></div>
+<!-- START: SECTION BULLETS -->
+<section class="section section-bullets">
     <!-- card section -->
-    <div class="card-section">
-        <div class="container">
-            <div class="row">
-                <!-- single card -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="lab-card">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
                         <div class="icon">
                             <i class="flaticon-023-flask"></i>
                         </div>
@@ -42,19 +37,21 @@ description: Philippine Association for Digital Commerce and Decentralized Indus
                         <p>PADCDI members work together to transform and build a more innovative and progressive ecosystem for everyone.</p>
                     </div>
                 </div>
-                <!-- single card -->
-                <div class="col-md-4 col-sm-6">
-                    <div class="lab-card">
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
                         <div class="icon">
-                            <img class="seal-white" src="/images/logo-white.png" alt="PADCDI" />
+                            <img class="seal-white" src="/assets/images/logo-white.png" alt="PADCDI" />
                         </div>
                         <h2>Become a Leader</h2>
-                        <p>Lead change and best practices in the Philippines among organizations with similar interests and initiatives for the country.</p>
+                        <p>Lead change in the Philippines among organizations with similar interests and initiatives for the country.</p>
                     </div>
                 </div>
-                <!-- single card -->
-                <div class="col-md-4 col-sm-12">
-                    <div class="lab-card">
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
                         <div class="icon">
                             <i class="flaticon-012-cube"></i>
                         </div>
@@ -66,220 +63,156 @@ description: Philippine Association for Digital Commerce and Decentralized Indus
         </div>
     </div>
     <!-- card section end-->
+</section>
+<!-- END: SECTION BULLETS -->
 
-
-    <!-- About contant -->
-    <div class="about-contant">
-        <div class="container">
-            <div class="section-title">
-                <h2>Work with us to move the <span>Philippines</span> forward</h2>
+<!-- START: SECTION MEMBERSHIP -->
+<section class="section section-membership">
+    <div class="container">
+        <div class="section-title">
+            <h2>Work with us to move the <span>Philippines</span> forward</h2>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Membership is open to any organizations that seek to promote digital commerce, distributed technologies, and innovation within the Philippines. Our members support, cooperate, and contribute to the progress of mutual initiatives and the goals of PADCDI.</p>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <p>Membership is open to any organizations that seek to promote digital commerce, distributed technologies, and innovation within the Philippines. Our members support, cooperate, and contribute to the progress of mutual initiatives and the goals of PADCDI.</p>
-                </div>
-                <div class="col-md-6">
-                    <p>Our members are bound by a Code of Conduct to ensure the integrity and sustainability of the digital commerce and distributed technologies ecosystems within the Philippines. By regulating our own members, PADCDI members maintain a stronger and more preferable identity among competing organizations and jurisdictions.</p>
-                </div>
-            </div>
-            <div class="text-center mt60">
-                <a href="" class="site-btn">Learn More</a>
+            <div class="col-md-6">
+                <p>Our members are bound by a Code of Conduct to ensure the integrity and sustainability of the digital commerce and distributed technologies ecosystems within the Philippines. By regulating our own members, PADCDI members maintain a stronger and more preferable identity among competing organizations and jurisdictions.</p>
             </div>
         </div>
+        <div class="member-carousel owl-carousel" data-do="owl-carousel" data-items="1|1|1|1">
+            {% for item in site.members %}
+                {% if item.name %}
+                    <div class="company-item">
+                        <a class="company-logo" href="{{ item.site }}" target="_blank">
+                            <img src="{{ item.logo }}" />
+                        </a>
+                        <p class="company-description">
+                            {{ item.summary }}
+                        </p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+        <div class="text-center mt-5">
+            <a href="/membership" class="btn btn-yellow btn-primary">Learn More About Membership</a>
+        </div>
     </div>
-</div>
-<!-- About section end -->
+</section>
+<!-- EMD: SECTION MEMBERSHIP -->
 
-
-<!-- Testimonial section -->
-<div class="news-section pb100 pt100">
-    <div class="test-overlay"></div>
+<!-- START: SECTION ARTICLES -->
+<section class="section section-articles">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 col-md-offset-4">
+            <div class="col-md-4">
+                <img src="/assets/images/map.png" />
+            </div>
+            <div class="col-md-8">
                 <div class="section-title left">
-                    <h2 style="color:#fff;">Latest News</h2>
+                    <h2>Latest News</h2>
                 </div>
-                <div class="owl-carousel" id="testimonial-slide">
-                    <!-- single news -->
-                    <div class="news">
-                        <a
-                            href="https://mises.org/power-market/wyoming-challenging-fed-can-it-become-americas-crypto-valley"
-                            target="_blank"
-                        >
-                            <img
-                                src="https://mises.org/sites/default/files/styles/list_teaser/public/static-page/img/Wyoming%20Crypto.png?itok=-fCRl6IN"
-                                width="300"
-                            />
-                        </a>
-                        <div class="news-title">
-                            <h2>
+                <div class="owl-carousel" data-do="owl-carousel">
+                    {% for post in site.posts %}
+                        <div class="article-item">
+                            <a
+                                class="article-image"
+                                href="{{ post.url }}"
+                                target="_blank"
+                            >
+                                <img src="{{ post.image }}" />
+                            </a>
+                            <h3 class="article-title">
                                 <a
-                                    href="https://mises.org/power-market/wyoming-challenging-fed-can-it-become-americas-crypto-valley"
+                                    href="{{ post.url }}"
                                     target="_blank"
                                 >
-                                    Wyoming is Challenging the Fed, Can it Become America's "Crypto Valley"?
+                                    {{ post.title }}
                                 </a>
-                            </h2>
+                            </h3>
+                            <em class="article-published">{{ post.published | date: '%B %d, %Y' }}</em>
                         </div>
-                    </div>
-                    <!-- single news -->
-                    <div class="news">
-                        <a
-                            href="https://ph.news.yahoo.com/fraud-rap-cryptocurrency-promoted-dj-khaled-mayweather-031120118.html"
-                            target="_blank"
-                        >
-                            <img
-                                src="https://i1.wp.com/www.cryptotraders.eu/wp-content/uploads/725_Ly9jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy85YTFjOWZjNjI0ZWE3MDBjNTU0YTE2MGJkY2VlZTY5MS5qcGc3D.jpg?fit=725%2C483&ssl=1"
-                                width="300"
-                            />
-                        </a>
-                        <div class="news-title">
-                            <h2>
-                                <a
-                                    href="https://ph.news.yahoo.com/fraud-rap-cryptocurrency-promoted-dj-khaled-mayweather-031120118.html"
-                                    target="_blank"
-                                >
-                                    Fraud rap for cryptocurrency promoted by DJ Khaled, Mayweather
-                                </a>
-                            </h2>
-                        </div>
-                    </div>
-                    <!-- single news -->
-                    <div class="news">
-                        <a
-                            href="http://fintechnews.sg/18434/philippines/coins-tagcash-racing-to-launch-first-crypto-order-book-exchange-in-ph/"
-                            target="_blank"
-                        >
-                            <img
-                                src="http://fintechnews.sg/wp-content/uploads/2018/03/Coins-Tagcash-racing-to-launch-first-crypto-order-book-exchange-in-PH-1440x564_c.jpg"
-                                width="300"
-                            />
-                        </a>
-                        <div class="news-title">
-                            <h2>
-                                <a
-                                    href="http://fintechnews.sg/18434/philippines/coins-tagcash-racing-to-launch-first-crypto-order-book-exchange-in-ph/"
-                                    target="_blank"
-                                >
-                                    Coins, Tagcash Racing to Launch ‘First’ Crypto Order-Book Exchange in PH
-                                </a>
-                            </h2>
-                        </div>
-                    </div>
-                    <!-- single news -->
-                    <div class="news">
-                        <a
-                            href="https://tokenomx.com/"
-                            target="_blank"
-                        >
-                            <img
-                                src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F40461723%2F243101125729%2F1%2Foriginal.jpg?w=1000&rect=0%2C0%2C2160%2C1080&s=1e944fb2a7ce3499336a40923b4e802f"
-                                width="300"
-                            />
-                        </a>
-                        <div class="news-title">
-                            <h2>
-                                <a
-                                    href="https://tokenomx.com/"
-                                    target="_blank"
-                                >
-                                    TokenOMX April 18-19th, 2018
-                                </a>
-                            </h2>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Testimonial section end-->
+</section>
+<!-- END: SECTION ARTICLES -->
 
-
-<!-- Services section -->
-<div class="services-section spad">
+<!-- START: SECTION MEMBERSHIP -->
+<section class="section section-committees">
     <div class="container">
-        <div class="section-title dark">
-            <h2>Our members enjoy these <span>benefits</span></h2>
+        <div class="section-title">
+            <h2>Paticipate in a <span>committee</span> and join the movement</h2>
         </div>
         <div class="row">
-            <!-- single service -->
-            <div class="col-md-4 col-sm-6">
-                <div class="service">
+            <div class="col-lg-4 col-sm-6 col-sm-12">
+                <div class="committee-item">
                     <div class="icon">
-                        <img class="seal" src="/images/seal.png" alt="Approval" />
+                        <i class="fas fa-balance-scale"></i>
                     </div>
-                    <div class="service-text">
-                        <h2>Association Approval</h2>
-                        <p>All members are afforded the opportunity to apply for approval by the Association in certifying validity and integrity.</p>
+                    <div class="committee-info">
+                        <h2>Governance</h2>
+                        <p>Duis varius ligula eu leo tristique lacinia. In ultricies ut nisl quis maximus. Morbi euismod elit imperdiet ex gravida, tristique dignissim turpis venenatis.</p>
                     </div>
                 </div>
             </div>
-            <!-- single service -->
-            <div class="col-md-4 col-sm-6">
-                <div class="service">
+            <div class="col-lg-4 col-sm-6 col-sm-12">
+                <div class="committee-item">
                     <div class="icon">
-                        <i class="flaticon-011-compass"></i>
+                        <i class="fas fa-check-circle"></i>
                     </div>
-                    <div class="service-text">
-                        <h2>Professional Networking</h2>
-                        <p>Connect with leaders across digital-related industries in and outside of the Philippines to achieve your goals.</p>
+                    <div class="committee-info">
+                        <h2>Compliance</h2>
+                        <p>Duis varius ligula eu leo tristique lacinia. In ultricies ut nisl quis maximus. Morbi euismod elit imperdiet ex gravida, tristique dignissim turpis venenatis.</p>
                     </div>
                 </div>
             </div>
-            <!-- single service -->
-            <div class="col-md-4 col-sm-6">
-                <div class="service">
+            <div class="col-lg-4 col-sm-6 col-sm-12">
+                <div class="committee-item">
                     <div class="icon">
-                        <i class="flaticon-043-sketch"></i>
+                        <i class="fas fa-university"></i>
                     </div>
-                    <div class="service-text">
-                        <h2>Promote Progress</h2>
-                        <p>Participate in PADCDI committees, conferences, workshops, and other initiatives to promote a more educated, advanced, and innovative ecosystem.</p>
+                    <div class="committee-info">
+                        <h2>Regulatory</h2>
+                        <p>Duis varius ligula eu leo tristique lacinia. In ultricies ut nisl quis maximus. Morbi euismod elit imperdiet ex gravida, tristique dignissim turpis venenatis.</p>
                     </div>
                 </div>
             </div>
-            <!-- single service -->
-            <div class="col-md-4 col-sm-6">
-                <div class="service">
+            <div class="col-lg-4 col-sm-6 col-sm-12">
+                <div class="committee-item">
                     <div class="icon">
-                        <i class="flaticon-018-laptop-1"></i>
+                        <i class="fas fa-graduation-cap"></i>
                     </div>
-                    <div class="service-text">
-                        <h2>Social Media</h2>
-                        <p>Member achievements and information are celebrated via our public social media outlets and newsletters.</p>
+                    <div class="committee-info">
+                        <h2>Education</h2>
+                        <p>Duis varius ligula eu leo tristique lacinia. In ultricies ut nisl quis maximus. Morbi euismod elit imperdiet ex gravida, tristique dignissim turpis venenatis.</p>
                     </div>
                 </div>
             </div>
-            <!-- single service -->
-            <div class="col-md-4 col-sm-6">
-                <div class="service">
+            <div class="col-lg-4 col-sm-6 col-sm-12">
+                <div class="committee-item">
                     <div class="icon">
-                        <i class="flaticon-036-brainstorming"></i>
+                        <i class="fas fa-bullhorn"></i>
                     </div>
-                    <div class="service-text">
-                        <h2>Education Programs</h2>
-                        <p>Teach regulators and future customers about modern technologies, skills, and ideas while promoting your brand.</p>
+                    <div class="committee-info">
+                        <h2>Marketing</h2>
+                        <p>Duis varius ligula eu leo tristique lacinia. In ultricies ut nisl quis maximus. Morbi euismod elit imperdiet ex gravida, tristique dignissim turpis venenatis.</p>
                     </div>
                 </div>
             </div>
-            <!-- single service -->
-            <div class="col-md-4 col-sm-6">
-                <div class="service">
+            <div class="col-lg-4 col-sm-6 col-sm-12">
+                <div class="committee-item">
                     <div class="icon">
-                        <i class="flaticon-026-search"></i>
+                        <i class="fas fa-flask"></i>
                     </div>
-                    <div class="service-text">
-                        <h2>Job Network</h2>
-                        <p>Connect with technical schools and communities to build your team that has the technical capital to push your organization forward.</p>
+                    <div class="committee-info">
+                        <h2>Technology</h2>
+                        <p>Duis varius ligula eu leo tristique lacinia. In ultricies ut nisl quis maximus. Morbi euismod elit imperdiet ex gravida, tristique dignissim turpis venenatis.</p>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="text-center">
-            <a href="membership.html" class="site-btn">Learn More</a>
         </div>
     </div>
 </div>
-<!-- services section end -->
